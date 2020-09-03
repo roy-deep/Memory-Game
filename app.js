@@ -5,7 +5,9 @@ window.addEventListener('load',()=>{
     {name:'Hotdog', image:'./images/hotdog.png'}, {name:'Hotdog', image:'./images/hotdog.png'},
     {name:'Ice-cream', image:'./images/ice-cream.png'}, {name:'Ice-cream', image:'./images/ice-cream.png'},
     {name:'Milkshake', image:'./images/milkshake.png'}, {name:'Milkshake', image:'./images/milkshake.png'},
-    {name:'Pizza', image:'./images/pizza.png'}, {name:'Pizza', image:'./images/pizza.png'}
+    {name:'Pizza', image:'./images/pizza.png'}, {name:'Pizza', image:'./images/pizza.png'},
+    {name:'Samosa', image:'./images/samosa.png'}, {name:'Samosa', image:'./images/samosa.png'},
+    {name:'Chicken', image:'./images/chicken.png'}, {name:'Chicken', image:'./images/chicken.png'}
   ]
   cardArray.sort(()=>0.5-Math.random())
   const grid = document.querySelector('.grid')
@@ -38,7 +40,7 @@ window.addEventListener('load',()=>{
     let cards = document.querySelectorAll('img')
     let optionOneId = cardChosenId[0]
     let optionTwoId = cardChosenId[1]
-    if (cardChosen[0]==cardChosen[1]){
+    if (cardChosen[0]==cardChosen[1] && cardChosenId[0]!=cardChosenId[1]){
       //alert('You found a match')
       cards[optionOneId].setAttribute('src', './images/white.png')
       cards[optionTwoId].setAttribute('src', './images/white.png')

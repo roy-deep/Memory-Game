@@ -1,6 +1,19 @@
+*{padding: 0; margin: 0;}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
 .grid{
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
-  width: 400px;
+  height: 440px;
+  width: 440px;
 }
+<<<<<<< HEAD
+img{margin: 5px;}
+h3{margin: 10px;}
+=======
+>>>>>>> d57ec5f2be1fd252dea72000fea7f136ac4a3176
